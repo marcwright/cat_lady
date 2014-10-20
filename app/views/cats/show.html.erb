@@ -1,0 +1,7 @@
+<h1>This is a Show Page for <%= @cat.name %></h1>
+
+<p>Name: <%= @cat.name %></p>
+<p>Trait: <%= @cat.trait %></p>
+
+<%= link_to 'Back to All the Kitties!', cats_path %>
+<%= link_to 'Edit', edit_cat_path(@cat) %>

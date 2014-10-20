@@ -1,0 +1,26 @@
+<h1>Here is a listing of all our Cat Lady Cats!</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>TRAIT</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cats.each do |cat| %>
+      <tr>
+        <td><%= cat.name %></td>
+        <td><%= cat.trait %></td>
+        <td><%= link_to cat.name, cat %></td>
+        <td><%= link_to 'Edit', edit_cat_path(cat) %></td>
+        <td><%= link_to 'Destroy', cat, method: :delete, data: { confirm: 'Are you sure sucka?'} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<td><%= link_to 'New', new_cat_path %></td>
+
+

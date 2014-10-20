@@ -1,0 +1,15 @@
+<%= form_for(@cat) do |cat| %>
+
+  <div>
+    <%= cat.label :name %><br>
+    <%= cat.text_field :name %>
+  </div>
+  <div>
+    <%= cat.label :trait %><br>
+    <%= cat.text_area :trait %>
+  </div>
+  
+  <div>
+    <%= cat.submit 'Submit' %>
+  </div>
+<% end %>
