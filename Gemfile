@@ -9,7 +9,7 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
 # stuff for Bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
+# gem 'autoprefixer-rails'
 gem "twitter-bootstrap-rails"
 gem 'font-awesome-sass'
 # Use Uglifier as compressor for JavaScript assets
