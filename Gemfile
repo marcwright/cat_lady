@@ -7,6 +7,7 @@ gem 'rails', '4.1.6'
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+# stuff for Bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem "twitter-bootstrap-rails"
@@ -26,6 +27,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'rspec-rails', '3.1.0'
